@@ -102,12 +102,15 @@
             <groupId>ca.weblite</groupId>
             <artifactId>jdeploy-maven-plugin</artifactId>
             <version>${jdeploy.maven.plugin.version}</version>
+            <configuration>
+              <skip>${jdeploy.skip}</skip>
+            </configuration>
             <executions>
               <execution>
                 <id>jdeploy</id>
                 <phase>package</phase>
                 <goals>
-                  <goal>publish</goal>
+                  <goal>sync-package-json</goal>
                 </goals>
               </execution>
             </executions>
