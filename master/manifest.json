@@ -1,0 +1,13 @@
+{
+    "background_color": "#fff",
+    "display": "standalone",
+    "name": "Pacmandeploy",
+    "start_url": ".",
+    "description": "jDeploy Swing Starter Project",
+    "short_name": "Pacmandeploy",
+    "icons": [{
+        "sizes": "512x512",
+        "src": "icon.png",
+        "type": "image/png"
+    }]
+}
