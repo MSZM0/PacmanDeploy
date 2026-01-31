@@ -12,7 +12,7 @@
             "./mvnw",
             "package"
         ],
-        "javaVersion": "21",
+        "javaVersion": "17",
         "cheerpj": {
             "githubPages": {
                 "branchPath": "{{ branch }}",
