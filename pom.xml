@@ -88,33 +88,5 @@
     </plugins>
   </build>
 
-  <profiles>
-    <profile>
-      <id>jdeploy</id>
-      <activation>
-        <property>
-          <name>env.CI</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>ca.weblite</groupId>
-            <artifactId>jdeploy-maven-plugin</artifactId>
-            <version>${jdeploy.maven.plugin.version}</version>
-            <executions>
-              <execution>
-                <id>jdeploy</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>sync-package-json</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
 </project>
